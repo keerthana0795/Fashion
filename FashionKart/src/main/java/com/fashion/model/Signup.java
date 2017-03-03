@@ -6,9 +6,14 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
+
+import org.hibernate.validator.constraints.Length;
 
 @Entity
-
 public class Signup implements Serializable 
 {
 	private static final long serialVersionUID = -723583058586873479L;
@@ -16,9 +21,15 @@ public class Signup implements Serializable
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Integer signupid;
+	@Size(min=5, max=10, message="Your name should be between 5 - 10 characters.")
 	private String first_name;
-	private String last_name;
+	@Min(value=5, message="Please insert at least 5 characters")
+     private String last_name;
+	@Pattern(regexp=".+@.+\\..+", message="Wrong email!")
 	private String email;
+	@NotNull(message="Please select a password")
+	@Length(min=5, max=10, message="Password should be between 5 - 10 charactes")
+
 	private String password;
 	
 	public Integer getSignupid() {

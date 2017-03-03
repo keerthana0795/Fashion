@@ -14,6 +14,7 @@ h2{
 color: purple;
 text-align: center;
 margin-top: 100px;
+
 }
 body{
 background-image: url("resources/images/img4.jpg");
@@ -27,6 +28,7 @@ p{
 <body>
 <%@ include file="Header1.jsp" %>
 <div class="container">
+<div style="color: teal; font-size: 20px;font-family:AR BLANCA">
   <div class="jumbotron">
  <h2> ABOUTUS </h2>
 <p>  
@@ -38,6 +40,6 @@ Need shoes or a bag to match that fabulous dress? We’ve got you covered with o
 Dedication To Customers.Since our goal is to make our customers happy, we are committed to offering the latest trends at the best prices. We are so confident in our prices that we have a low price guarantee policy; if you find a lower price on any item we carry online, we will beat it by 2%.
 If you have any questions or concerns while shopping with us, our customer service team is here to help you. Behind Simply Dresses is an amazing team of real, live specialists who are happy to handle any issue you may have.
 Inventory is securely stored in our state of the art facility and carefully inspected before being shipped. Each dress is wrapped individually and handled with care so your dress not only arrives safely, but in style. Additionally, we offer secure online ordering through Comodo and proudly accept PayPal and all major credit cards. You’re safe with us!
-</p>
+</p></div></div></div>
 </body>
 </html>

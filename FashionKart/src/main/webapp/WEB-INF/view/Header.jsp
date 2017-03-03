@@ -1,5 +1,9 @@
 
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+ 
+   <%@page isELIgnored="false" %>
+
 <html>
 <head>
 										<!-- Bootstrap Command -->
@@ -14,6 +18,7 @@
 										
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
+  <div style="color: teal; font-size: 20px;font-family:AR BLANCA">
     <div class="navbar-header">
       <a class="navbar-brand" href="index">FashionKart</a>
         </div>
@@ -45,8 +50,9 @@
         
         <ul class="nav navbar-nav navbar-right">
         <li class="active"><a href="Logout">LOGOUT</a></li> </ul>
-        </div>
+        </div></div>
 </nav>
+
 									<!-- Placed at the end of the document so that page load faster -->
 
 				                <script src="<c:url value='/resources/js/bootstrap.min.js'/>" /></script>

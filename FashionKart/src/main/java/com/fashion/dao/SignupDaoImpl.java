@@ -13,7 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.fashion.model.Signup;
 
-@Repository("SignupDao")
+@Repository("signupDao")
 public class SignupDaoImpl implements SignupDao {
 
 	@Autowired

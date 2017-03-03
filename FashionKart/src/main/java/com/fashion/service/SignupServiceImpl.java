@@ -10,7 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.fashion.dao.SignupDao;
 import com.fashion.model.Signup;
 
-@Service("SignupService")
+@Service("signupService")
 
 public class SignupServiceImpl implements SignupService {
 	

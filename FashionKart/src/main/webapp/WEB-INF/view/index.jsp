@@ -3,7 +3,7 @@
 <html>
 <link rel="stylesheet" href="resources/css/default.css" type="text/css"> 
 <head>
-<title>LOVELY DRESS.COM</title>
+<title>TRENDY.COM</title>
 
 										<!-- Bootstrap Command -->										
   
@@ -11,11 +11,11 @@
   <link rel="stylesheet" href="<c:url value='/resources/css/bootstrap.min.css'/>" />
   <link rel="stylesheet" href="resources/css/default.css" type="text/css">
   
-<style>
+<!--  <style>
  body {
     background-image: url("resources/images/img6.jpg");
 } 
-</style>
+</style>-->
 
 </head>
 <body>

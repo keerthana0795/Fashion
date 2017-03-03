@@ -27,8 +27,8 @@ body {
     <input type="text" name="username" class="form-control">
     <label>Password</label>
    <input type="password" class="form-control" required="required"/> 
-    <label>mobileno</label>
-    <input type="number" name="mobileno" class="form-control">
+    <!-- <label>mobileno</label>
+    <input type="number" name="mobileno" class="form-control">-->
     
     <br>
     <label><input type="checkbox" name="terms"> I agree with the <a href="#">Terms and Conditions</a>.</label>

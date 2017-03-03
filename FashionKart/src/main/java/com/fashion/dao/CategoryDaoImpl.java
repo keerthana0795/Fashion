@@ -10,8 +10,9 @@ import org.springframework.stereotype.Repository;
 
 import com.fashion.model.Category;
 
-@Repository
+@Repository("categoryDao")
 public class CategoryDaoImpl implements CategoryDao {
+	
 @Autowired
 private SessionFactory sessionFactory;
 	

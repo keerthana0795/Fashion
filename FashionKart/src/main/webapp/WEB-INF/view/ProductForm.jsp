@@ -35,12 +35,12 @@
 			<form:radiobutton path="Category.id" value="${c.id}" />${c.categoryDetails}
 			</c:forEach></td>
        </tr>
-       <tr>
+       <%-- <tr>
        <td><label for="supplier">Supplier</label></td>
            <td><c:forEach var="c" items="${suppliers}">
 			<form:radiobutton path="Supplier.id" value="${c.id}" />${c.supplierDetails}
 			</c:forEach></td>
-       </tr>
+       </tr> --%>
        <tr>
        <td><form:label path="image">Product Image:<span class="text-danger"></span></form:label></td>
        <td><form:input path="image" type="file" /></td>

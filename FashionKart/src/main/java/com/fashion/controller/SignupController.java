@@ -1,6 +1,7 @@
 package com.fashion.controller;
 
 import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -64,12 +65,4 @@ public class SignupController
 		
 	}
 	
-	
-	@RequestMapping(value="updateSignup",method=RequestMethod.POST)
-	public ModelAndView updateSignup(@ModelAttribute("supfrm")Signup supfrm)
-	{
-		SignupService.updateRow(supfrm);
-		return new ModelAndView("redirect:listSignup");
-		
-	}
-	}
+}

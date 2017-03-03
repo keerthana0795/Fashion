@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import com.fashion.dao.CategoryDao;
 import com.fashion.model.Category;
 
-@Service
+@Service("categoryService")
 public class CategoryServiceImpl implements CategoryService {
 	@Autowired
 	private CategoryDao categoryDao;

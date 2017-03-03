@@ -59,7 +59,7 @@ public class ProductController
 		MultipartFile prodImage=prdfrm.getImage();
 		if(!prodImage.isEmpty()){
 			Path paths=
-	Paths.get("G:/FashionKart/src/main/webapp/resources/images/"+ prdfrm.getProductid()+".png");
+	Paths.get("F:/Cloud/FashionKart/src/main/webapp/resources/images/"+ prdfrm.getProductid()+".jpg");
 		try {
 			prodImage.transferTo(new File(paths.toString()));
 		} catch (IllegalStateException e) {

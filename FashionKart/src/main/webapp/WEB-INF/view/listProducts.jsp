@@ -8,21 +8,18 @@
 </head>
 <body>
 <center>
-<div style="color: teal; font-size: 30px">ONLINE SHOPPERS  |PRODUCT DETAILS</div>
+<div style="color: teal; font-size: 30px;font-family:AR BLANCA">ONLINE SHOPPERS  |PRODUCT DETAILS</div>
 
   <c:if test="${!empty productList}">
-   <table border="1" bgcolor="black" width="600px">
-    <tr
-     style="background-color: teal; color: white; text-align: center;"
-     height="40px">
-     
+   <table border="1" bgcolor="black" style="width:600px; height:600px; color:white; font-family:AR BLANCA; text-align:center">
+     <tr>
      <td>Product Id</td>
      <td>Product Name</td>
      <td>Product Image</td>
    <td>Product Description</td>
    <td>Product Price</td>
    <td>Category</td>
-   <td>Supplier</td>
+   <!-- <td>Supplier</td> -->
      <td>Edit</td>
      <td>Delete</td>
     </tr>
@@ -36,8 +33,8 @@
       <td><c:out value="${pd.name}" />
       </td>
       <td>
-				<c:url var="src" value="/resources/images/${pd.productid }.png"></c:url>
-				<img src="${src }"/>
+				<c:url var="src" value="/resources/images/${pd.productid }.jpg"></c:url>
+				<img src="${src }"style="width:300px;height:300px;"/>
 				</td>
       <td><c:out value="${pd.description}" />
       </td>
@@ -45,8 +42,8 @@
       </td>
       <td><c:out value="${pd.category}" />
       </td>
-      <td><c:out value="${pd.supplier}" />
-      </td>
+     <!-- <td><c:out value="${pd.supplier}" />
+      </td>-->
       <td><a href="editProduct?id=${pd.productid}">Edit</a></td>
       <td><a href="deleteProduct?id=${pd.productid}">Delete</a></td>
      </tr>
