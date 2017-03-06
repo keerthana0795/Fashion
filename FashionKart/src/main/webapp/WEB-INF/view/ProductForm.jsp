@@ -8,10 +8,16 @@
  <head>
   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
   <title>ADD PRODUCT DETAILS</title>
+  <style>
+  body{
+  background-color:silver;
+  }
+  </style>
  </head>
  <body>
-  <h2>ADD PRODUCT DATA</h2>
-  <form:form method="POST" action="./saveProduct" commandName="prdfrm" enctype="multipart/form-data">
+ <form:form method="POST" action="./saveProduct" commandName="prdfrm" enctype="multipart/form-data">
+<Center>
+  <div style="color: teal; font-size: 30px">ONLINE SHOPPERS | PRODUCT DETAILS</div>
       <table>
 <!--        <tr> -->
 <%--            <td><form:label path="productid">Product ID:</form:label></td> --%>
@@ -53,8 +59,8 @@
  
   
    <a type="button" class="btn-success"  href="listProducts">VIEW ALL PRODUCTS</a>
-   <center>
-<div style="color: teal; font-size: 30px">ONLINE SHOPPERS | PRODUCT DETAILS</div>
+  
+<div style="color: teal; font-size: 30px">CLICK HERE BELOW</div>
 
   <c:if test="${!empty productList}">
    <table border="1" bgcolor="black" width="600px">

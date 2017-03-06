@@ -72,7 +72,7 @@
 </nav>
 									<!-- Placed at the end of the document so that page load faster -->
 
-				                <script src="<c:url value='/resources/js/bootstrap.min.js'/>" /></script>
+				                <%-- <script src="<c:url value='/resources/js/bootstrap.min.js'/>" /></script> --%>
 </body>
 </html>
     
