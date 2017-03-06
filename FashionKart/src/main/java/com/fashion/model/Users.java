@@ -48,6 +48,12 @@ public boolean isEnabled() {
 public void setEnabled(boolean enabled) {
 	this.enabled = enabled;
 }
+public Customer getCustomer() {
+	return customer;
+}
+public void setCustomer(Customer customer) {
+	this.customer = customer;
+}
 
 
 

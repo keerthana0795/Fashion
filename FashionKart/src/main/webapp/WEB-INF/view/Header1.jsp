@@ -49,8 +49,10 @@
           <li><a href="#">LEHENDA</a></li>
           <li><a href="#">GAGRA CHOLI</a></li>
         </ul></li>
+        <security:authorize access="hasRole('ROLE_USER')">
         <li class="active">
         <a href="<c:url value="/all/registrationForm"></c:url>"> CUSTOMER DELIVERY</a></li>
+        </security:authorize>
         </c:if>
         </ul>
         

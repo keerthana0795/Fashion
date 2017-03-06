@@ -46,4 +46,14 @@ public class ProductServiceImpl implements ProductService {
 		// TODO Auto-generated method stub
 		return productDao.deleteRow(id);
 	}
+
+	public List<Product> getAllProducts() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Product getProductById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	}

@@ -9,6 +9,8 @@ public interface ProductService {
 	public int insertRow(Product prd);
 
 	public List<Product> getList();
+	 List<Product> getAllProducts();
+	 Product getProductById(int id);
 
 	 public Product getRowById(int id);
 

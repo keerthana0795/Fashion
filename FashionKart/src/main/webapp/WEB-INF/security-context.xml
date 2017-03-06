@@ -15,7 +15,7 @@
     <security:intercept-url pattern="/Signin" access="permitAll"/>
     <security:intercept-url pattern="FashionKart/**" access="hasAnyRole('ROLE_ADMIN','ROLE_USER')"/>
     <security:intercept-url pattern="/ProductForm" access="hasRole('ROLE_ADMIN')"/>
-
+    <security:intercept-url pattern="/registerCustomer" access="hasRole('ROLE_USER')"/>
     
     <security:form-login login-page="/Signin" 
      authentication-failure-url="/Signin?error" 

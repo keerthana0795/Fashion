@@ -20,7 +20,7 @@ public class Product implements Serializable {
 	private static final long serialVersionUID = -723583058586873479L;
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-    private Integer productid;
+    private int productid;
 	private String name;
 	private String description;
 	private Double price;
@@ -32,30 +32,10 @@ public class Product implements Serializable {
 	private Supplier supplier;
 	@Transient 
 	private MultipartFile image;
-	
-	
-	public MultipartFile getImage() {
-		return image;
-	}
-	public void setImage(MultipartFile image) {
-		this.image = image;
-	}
-	public Supplier getSupplier() {
-		return supplier;
-	}
-	public void setSupplier(Supplier supplier) {
-		this.supplier = supplier;
-	}
-	public Category getCategory() {
-		return category;
-	}
-	public void setCategory(Category category) {
-		this.category = category;
-	}
-	public Integer getProductid() {
+	public int getProductid() {
 		return productid;
 	}
-	public void setProductid(Integer productid) {
+	public void setProductid(int productid) {
 		this.productid = productid;
 	}
 	public String getName() {
@@ -76,5 +56,26 @@ public class Product implements Serializable {
 	public void setPrice(Double price) {
 		this.price = price;
 	}
+	public Category getCategory() {
+		return category;
+	}
+	public void setCategory(Category category) {
+		this.category = category;
+	}
+	public Supplier getSupplier() {
+		return supplier;
+	}
+	public void setSupplier(Supplier supplier) {
+		this.supplier = supplier;
+	}
+	public MultipartFile getImage() {
+		return image;
+	}
+	public void setImage(MultipartFile image) {
+		this.image = image;
+	}
+	
+	
+		
 	
 	}
