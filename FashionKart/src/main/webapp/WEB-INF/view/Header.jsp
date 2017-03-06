@@ -49,7 +49,7 @@
         </ul></li></ul>
         
         <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="Logout">LOGOUT</a></li> </ul>
+        <li class="active"><a href="<c:url value="/j_spring_security_logout"></c:url>">LOGOUT</a></li> </ul>
         </div></div>
 </nav>
 

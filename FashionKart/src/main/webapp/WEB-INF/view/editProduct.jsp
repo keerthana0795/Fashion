@@ -15,6 +15,7 @@
   <form:form method="POST" action="./updateProduct" commandName="prdfrm">
       <table>
        <tr>
+       
            <td><form:label path="productid">Product ID:</form:label></td>
            <td><form:input path="productid" value="${prod.productid}" readonly="true"/></td>
        </tr>

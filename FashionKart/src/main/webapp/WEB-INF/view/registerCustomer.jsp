@@ -58,6 +58,7 @@
 <div class="form-group">
 <form:label path="users.username">USERNAME</form:label>
 <form:input path="users.username"/>
+${duplicateUsername }
 <form:errors path="users.username"/>
 </div>
 <div class="form-group">

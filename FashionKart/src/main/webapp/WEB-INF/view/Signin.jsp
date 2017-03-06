@@ -98,10 +98,13 @@ body {
 <%@ include file="Header1.jsp" %>
 		<div class="container">
 		<div class="col-xs-4">
- <form class="form-signin" action="./LogCheck"method="post">       
+ <form class="form-signin" action="<c:url value="/j_spring_security_check"></c:url>"method="post">       
       <h2 class="form-signin-heading">PLEASE LOGIN</h2>
-      <input type="text" class="form-control" id="username" name="username" placeholder="User Name" required="required" autofocus="" />
-      <input type="password" class="form-control" id="password" name="password" placeholder="Password" required="required"/>      
+      ${error }
+${logout }
+${registrationSuccess }
+      <input type="text" class="form-control" id="j_username" name="j_username" placeholder="User Name" required="required" autofocus="" />
+      <input type="password" class="form-control" id="j_password" name="j_password" placeholder="Password" required="required"/>      
       <label class="checkbox">
         <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
       </label>
