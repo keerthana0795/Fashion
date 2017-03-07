@@ -1,7 +1,7 @@
 
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
- 
+ <%@ taglib prefix="security"uri="http://www.springframework.org/security/tags"%>
    <%@page isELIgnored="false" %>
 
 <html>
@@ -10,7 +10,12 @@
 										
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		    <link rel="stylesheet" href="<c:url value='/resources/css/bootstrap.min.css'/>" />
-		    
+		                               
+		                               <!-- Angular Js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script> 
+                                               
+                                               
+    
 </head>
 <body>
 					
@@ -25,6 +30,7 @@
        <ul class="nav navbar-nav">
         <li class="active"><a href="Aboutus">ABOUTUS</a></li> 
          <li class="active"><a href="ProductForm">PRODUCTFORM</a></li>
+         <li class="active"><a href="listProducts">PRODUCTS</a>
       <li class="dropdown">
       <a class="dropdown-toggle" data-toggle="dropdown" href="#">CASUSAL WEAR<span class="caret"></span></a>
         <ul class="dropdown-menu">

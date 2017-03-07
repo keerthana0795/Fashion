@@ -80,7 +80,8 @@ public class ProductController
 		return new ModelAndView("listProducts","productList",ls);
 	}
 	
-	@RequestMapping("deleteProduct")
+	
+	@RequestMapping("/deleteProduct")
 	public ModelAndView deleteproduct(@RequestParam int id)
 	{
 		
@@ -93,6 +94,14 @@ public class ProductController
 	{
 		prdfrm=productService.getRowById(id);
 		ModelAndView mv=new ModelAndView("editProduct","prod",prdfrm);
+		return mv;
+		
+	}
+	@RequestMapping("/viewProduct")
+	public ModelAndView viewproduct(@ModelAttribute("prdfrm")Product prdfrm,@RequestParam int id)
+	{
+		prdfrm=productService.getRowById(id);
+		ModelAndView mv=new ModelAndView("viewProduct","prod",prdfrm);
 		return mv;
 		
 	}

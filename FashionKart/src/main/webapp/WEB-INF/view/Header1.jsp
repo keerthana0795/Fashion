@@ -7,7 +7,8 @@
 										
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		    <link rel="stylesheet" href="<c:url value='/resources/css/bootstrap.min.css'/>" />
-	    
+	                                  <!-- Angular Js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script> 
 </head>
 <body>
 					
@@ -27,7 +28,12 @@
         <li class="active">
         <a href="ProductForm">PRODUCTFORM</a></li>
 		</security:authorize>
-        <li class="dropdown">
+ <security:authorize access="hasRole('ROLE_USER')">
+        <li class="active">
+        <a href="listProducts">PRODUCT</a></li>
+		</security:authorize>
+		
+        <!-- <li class="dropdown">
       <a class="dropdown-toggle" data-toggle="dropdown" href="#">CASUSAL WEAR<span class="caret"></span></a>
         <ul class="dropdown-menu">
         <li><a href="#">SMARTY CASUSAL</a></li>
@@ -48,7 +54,7 @@
           <li><a href="#">SAREES</a></li>
           <li><a href="#">LEHENDA</a></li>
           <li><a href="#">GAGRA CHOLI</a></li>
-        </ul></li>
+        </ul></li> -->
         <security:authorize access="hasRole('ROLE_USER')">
         <li class="active">
         <a href="<c:url value="/all/registrationForm"></c:url>"> CUSTOMER DELIVERY</a></li>

@@ -58,7 +58,7 @@
    </table> 
  
   
-   <a type="button" class="btn-success"  href="listProducts">VIEW ALL PRODUCTS</a>
+    <a type="button" class="btn-success"  href="listProducts">VIEW ALL PRODUCTS</a> 
   
 <div style="color: teal; font-size: 30px">CLICK HERE BELOW</div>
 
