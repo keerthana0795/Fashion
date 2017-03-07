@@ -59,6 +59,10 @@
         <li class="active">
         <a href="<c:url value="/all/registrationForm"></c:url>"> CUSTOMER DELIVERY</a></li>
         </security:authorize>
+        <security:authorize access="hasRole('ROLE_USER')">
+        <li class="active">
+        <a href="<c:url value="/cart/getCartId"></c:url>">CART</a></li>
+             </security:authorize>
         </c:if>
         </ul>
         

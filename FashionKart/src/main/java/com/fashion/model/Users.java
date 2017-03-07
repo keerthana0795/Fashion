@@ -1,5 +1,7 @@
 package com.fashion.model;
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -11,7 +13,7 @@ import org.hibernate.validator.constraints.NotEmpty;
 
 @Entity
 
-public class Users {
+public class Users implements Serializable {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 private int id;
