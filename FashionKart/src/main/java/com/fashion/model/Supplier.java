@@ -1,4 +1,4 @@
-package com.fashion.model;
+/*package com.fashion.model;
 
 import java.io.Serializable;
 import java.util.List;
@@ -62,3 +62,4 @@ public class Supplier implements Serializable
 	}
 
 }
+*/

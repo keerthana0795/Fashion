@@ -1,4 +1,4 @@
-package com.fashion.service;
+/*package com.fashion.service;
 
 import java.util.List;
 
@@ -61,4 +61,4 @@ public class SignupServiceImpl implements SignupService {
 		// TODO Auto-generated method stub
 		return 0;
 	}
-	}
+	}*/

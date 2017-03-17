@@ -1,4 +1,4 @@
-package com.fashion.model;
+/*package com.fashion.model;
 
 import java.io.Serializable;
 
@@ -64,3 +64,4 @@ public class Signup implements Serializable
 	}
 	
 }
+*/

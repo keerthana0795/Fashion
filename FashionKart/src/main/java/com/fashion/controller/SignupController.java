@@ -1,4 +1,4 @@
-package com.fashion.controller;
+/*package com.fashion.controller;
 
 import java.util.List;
 
@@ -65,4 +65,4 @@ public class SignupController
 		
 	}
 	
-}
+}*/

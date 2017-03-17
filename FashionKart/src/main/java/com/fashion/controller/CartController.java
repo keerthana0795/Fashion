@@ -23,6 +23,7 @@ private CartService cartService;
 
 @RequestMapping("/cart/getCartId")
 public String getCartId(Model model){
+	System.out.println("hello world");
 User user=(User)SecurityContextHolder.getContext().getAuthentication().getPrincipal();
 String username=user.getUsername();
 Customer customer=customerService.getCustomerByUsername(username);
@@ -33,7 +34,8 @@ return "cart";
 }
 @RequestMapping("/cart/getCart/{cartId}")
 public @ResponseBody Cart getCart(@PathVariable int cartId){
+	System.out.println("hai");
 Cart cart=cartService.getCart(cartId);
 return cart;
-}	
+}
 }

@@ -4,56 +4,39 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Propagation;
-import org.springframework.transaction.annotation.Transactional;
 
 import com.fashion.dao.ProductDao;
 import com.fashion.model.Product;
 
-@Service("productService")
-
+@Service
 public class ProductServiceImpl implements ProductService {
-	
-	@Autowired
-	private ProductDao productDao;
+@Autowired
+private ProductDao productDao;
 
-	@Transactional(propagation=Propagation.SUPPORTS)
-	public int insertRow(Product prd) {
-		// TODO Auto-generated method stub
-		return productDao.insertRow(prd);
-	}
+public ProductServiceImpl(){
+	System.out.println("CREATING INSTANCE FOR PRODUCTSERVICEIMPL");
+}
 
-	@Transactional(propagation=Propagation.SUPPORTS)
-	public List getList() {
-		// TODO Auto-generated method stub
-		return productDao.getList();
-	}
-
-	@Transactional(propagation=Propagation.SUPPORTS)
-	public Product getRowById(int id) {
-		// TODO Auto-generated method stub
-		return productDao.getRowById(id);
-	}
-
-	@Transactional(propagation=Propagation.SUPPORTS)
-	public int updateRow(Product prd) {
-		// TODO Auto-generated method stub
-		return productDao.updateRow(prd);
-	}
-
-	@Transactional(propagation=Propagation.SUPPORTS)
-	public int deleteRow(int id) {
-		// TODO Auto-generated method stub
-		return productDao.deleteRow(id);
+	public Product saveProduct(Product product) {
+		System.out.println("I am inside product service impl");
+		return productDao.saveProduct(product);
 	}
 
 	public List<Product> getAllProducts() {
-		// TODO Auto-generated method stub
-		return null;
+		return productDao.getAllProducts();
 	}
 
 	public Product getProductById(int id) {
-		// TODO Auto-generated method stub
-		return null;
+		return productDao.getProductById(id);
 	}
+
+	public void deleteProduct(int id) {
+		productDao.deleteProduct(id);
 	}
+
+	public void updateProduct(Product product) {
+		productDao.updateProduct(product);
+		
+	}
+
+}

@@ -1,28 +1,41 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%@ include file="Header1.jsp" %>
+
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Cart</title>
 </head>
-<body>
-
-
+<body style="margin-top:100px">
+<div ng-app="app" ng-controller="ProductController">
+<div ng-init="getCart(${cartId})">
+<a href="" class="btn btn-danger pull-left" ng-click="clearCart()">
+<span class="glyphicon glphyicon-remove-sign"></span>
+ClearCart
+</a>
+<a href="" class="btn btn-success pull-right"><span class="glyphicon glyphicon-shopping-cart"></span>Checkout</a>
 <table class="table table-striped">
 <thead>
-<tr><th>Name</th><th>Quantity</th><th>Total Price</th>
+<tr><th>NAME</th><th>QUANTITY</th><th>TOTAL PRICE</th><th>REMOVE</th>
 </tr>
 </thead>
+
+
 
 <tr ng-repeat="cartItem in cart.cartItems">
 <td>{{cartItem.product.name}}</td>
 <td>{{cartItem.quantity}}</td>
 <td>{{cartItem.totalPrice}}</td>
+<td><a href="" class="btn btn-danger pull-left" ng-click="removeFromCart(cartItem.id)"><!-- <span class="glyphicon glyphicon-remove"> --></span>Remove
+</a></td>
 </tr>
 
+
 </table>
+Total Price:{{calculateGrandTotal()}}
+</div></div>
+
 <script src="<c:url value="/resources/js/controller.js"></c:url>"></script>
+
 </body>
 </html>
+
+

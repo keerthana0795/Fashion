@@ -1,4 +1,4 @@
-package com.fashion.service;
+/*package com.fashion.service;
 
 import java.util.List;
 
@@ -17,4 +17,4 @@ public interface SignupService {
 	 public int deleteRow(int id);
 
 
-}
+}*/

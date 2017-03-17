@@ -2,22 +2,16 @@ package com.fashion.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Propagation;
-import org.springframework.transaction.annotation.Transactional;
 
 import com.fashion.dao.CustomerDao;
 import com.fashion.model.Customer;
-
-@Service("customerService")
-public class CustomerServiceImpl implements CustomerService {
-	
+@Service
+public class CustomerServiceImpl implements CustomerService{
 	@Autowired
-	private CustomerDao customerDao;
-	
-	@Transactional(propagation=Propagation.SUPPORTS)
-		public void saveCustomer(Customer customer) {
-			customerDao.saveCustomer(customer);
-		}
+private CustomerDao customerDao;
+	public void saveCustomer(Customer customer) {
+		customerDao.saveCustomer(customer);
+	}
 	public Customer getCustomerByUsername(String username){
 		return customerDao.getCustomerByUsername(username);
 	}

@@ -1,4 +1,4 @@
-package com.fashion.dao;
+/*package com.fashion.dao;
 
 import java.util.List;
 
@@ -16,4 +16,4 @@ public interface SignupDao {
 
 	 public int deleteRow(int id);
 
-}
+}*/

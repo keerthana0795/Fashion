@@ -1,4 +1,4 @@
-package com.fashion.dao;
+/*package com.fashion.dao;
 
 import java.util.List;
 
@@ -25,3 +25,4 @@ public class SupplierDaoImpl implements SupplierDao {
 	}
 
 }
+*/

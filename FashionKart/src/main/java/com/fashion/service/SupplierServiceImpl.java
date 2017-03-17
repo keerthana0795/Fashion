@@ -1,4 +1,4 @@
-package com.fashion.service;
+/*package com.fashion.service;
 
 import java.util.List;
 
@@ -21,3 +21,4 @@ public class SupplierServiceImpl implements SupplierService {
 
 
 }
+*/

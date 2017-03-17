@@ -15,16 +15,16 @@ import javax.persistence.OneToOne;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
-public class Cart implements Serializable {
+public class Cart implements Serializable{
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy=GenerationType.AUTO)
 private int id;
 private double grandTotal;
 @OneToOne
-@JsonIgnore
+//@JsonIgnore
 private Customer customer;
 @OneToMany(mappedBy="cart",cascade=CascadeType.ALL,fetch=FetchType.EAGER)
-private List<CartItem>cartItems;
+private List<CartItem> cartItems;
 public int getId() {
 	return id;
 }
@@ -49,8 +49,5 @@ public List<CartItem> getCartItems() {
 public void setCartItems(List<CartItem> cartItems) {
 	this.cartItems = cartItems;
 }
-
-
-
 
 }

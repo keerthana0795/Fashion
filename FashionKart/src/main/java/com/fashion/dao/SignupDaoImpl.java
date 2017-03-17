@@ -1,4 +1,4 @@
-package com.fashion.dao;
+/*package com.fashion.dao;
 
 import java.io.Serializable;
 import java.util.List;
@@ -86,4 +86,4 @@ public class SignupDaoImpl implements SignupDao {
 	}
 	
 	
-}
+}*/

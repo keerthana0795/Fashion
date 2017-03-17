@@ -8,32 +8,24 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 import org.hibernate.validator.constraints.NotEmpty;
+
 @Entity
 public class BillingAddress implements Serializable {
-@Id
-@GeneratedValue(strategy=GenerationType.IDENTITY)
-
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
 private int id;
-
-@NotEmpty(message="please enter apartmentnumber")	
+	@NotEmpty(message="please enter apartmentNumber")
 private String apartmentNumber;
-
-@NotEmpty(message="please enter streetname")	
+	@NotEmpty(message="please enter streetName")
 private String streetName;
-
-@NotEmpty(message="please enter city")	
+	@NotEmpty(message="please enter city")
 private String city;
-
-@NotEmpty(message="please enter State")	
+	@NotEmpty(message="please enter State")
 private String State;
-
-@NotEmpty(message="please enter country")	
+	@NotEmpty(message="please enter country")
 private String country;
-
-@NotEmpty(message="please enter zipcode")	
+	@NotEmpty(message="please enter zipcode")
 private String zipcode;
-
-
 public int getId() {
 	return id;
 }
@@ -42,7 +34,6 @@ public void setId(int id) {
 }
 public String getApartmentNumber() {
 	return apartmentNumber;
-	
 }
 public void setApartmentNumber(String apartmentNumber) {
 	this.apartmentNumber = apartmentNumber;
@@ -59,8 +50,6 @@ public String getCity() {
 public void setCity(String city) {
 	this.city = city;
 }
-
-
 public String getState() {
 	return State;
 }

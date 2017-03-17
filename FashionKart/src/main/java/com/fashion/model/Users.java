@@ -12,17 +12,20 @@ import javax.persistence.OneToOne;
 import org.hibernate.validator.constraints.NotEmpty;
 
 @Entity
-
-public class Users implements Serializable {
+public class Users implements Serializable{
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy=GenerationType.AUTO)
 private int id;
-	@NotEmpty(message="please enter username")	
-	@Column(unique=true)
+	
+@NotEmpty(message="please enter username")	
+@Column(unique=true)
 private String username;
-	@NotEmpty(message="please enter password")	
+
+@NotEmpty(message="please enter password")
 private String password;
+
 private boolean enabled;
+
 @OneToOne(mappedBy="users")
 private Customer customer;
 public int getId() {
@@ -31,7 +34,6 @@ public int getId() {
 public void setId(int id) {
 	this.id = id;
 }
-
 public String getUsername() {
 	return username;
 }
@@ -56,7 +58,5 @@ public Customer getCustomer() {
 public void setCustomer(Customer customer) {
 	this.customer = customer;
 }
-
-
 
 }
