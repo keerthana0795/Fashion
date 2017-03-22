@@ -1,11 +1,8 @@
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ include file="Header1.jsp" %>
 <html>
 <head>
 <title>LOGIN PAGE </title>
-                           <!-- Bootstrap Command -->										
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="<c:url value='/resources/css/bootstrap.min.css'/>" />
+                           
 <style>
 @import "bourbon";
 body {
@@ -95,7 +92,7 @@ body {
 </head>
 <body> 
                              <!-- Header tab Command -->
-<%@ include file="Header1.jsp" %>
+
 		<div class="container">
 		<div class="col-xs-4">
  <form class="form-signin" action="<c:url value="/j_spring_security_check"></c:url>"method="post">       

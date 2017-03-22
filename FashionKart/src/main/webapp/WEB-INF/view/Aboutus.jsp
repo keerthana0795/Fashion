@@ -34,7 +34,7 @@ p{
 <p>  
 About classic Dresses
 
-Simply Dresses, a division of PromGirl, LLC, has been happily offering the latest in special occasion fashion and accessories to our customers online since 2013. We are proud to provide the most stylish dresses of the best quality from a site you can trust.
+Simply Dresses, a division of PromGirl, LLC, has been happily offering the latest in special occasion fashion and accessories to our customers online since 2017. We are proud to provide the most stylish dresses of the best quality from a site you can trust.
 Dedication To Fashion.A Simply Dresses customer has style. Our buyers scour the fashion markets for the hottest dresses, always with our customers in mind. The result: hundreds of amazing special occasion dresses at the best prices. From weddings to cocktail parties and military balls, we make sure you can truly find a perfect dress for every occasion at Simply Dresses.
 Need shoes or a bag to match that fabulous dress? We’ve got you covered with our selection of accessories to perfectly complement any outfit.
 Dedication To Customers.Since our goal is to make our customers happy, we are committed to offering the latest trends at the best prices. We are so confident in our prices that we have a low price guarantee policy; if you find a lower price on any item we carry online, we will beat it by 2%.

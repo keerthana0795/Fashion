@@ -38,7 +38,7 @@ private ProductService productService;
 private CartService cartService;
 
 @RequestMapping("/cart/addCartItem/{pid}")
-//@ResponseStatus(value=HttpStatus.NO_CONTENT)
+@ResponseStatus(value=HttpStatus.NO_CONTENT)
 public void addCartItem(@PathVariable(value="pid") int productId){
 	System.out.println("add product in cart**************************");
 User user=(User)SecurityContextHolder.getContext().getAuthentication().getPrincipal();
@@ -100,7 +100,8 @@ public void removeCartItem(@PathVariable int cartItemId){
 CartItem cartItem=cartItemService.getCartItem(cartItemId);
 cartItemService.removeCartItem(cartItem);
 }
-@RequestMapping("/cart/removeAllCartItems/{cartId}")
+
+@RequestMapping("/cart/removeAllCartItem/{cartId}")
 @ResponseStatus(value=HttpStatus.NO_CONTENT)
 public void removeAllCartItems(@PathVariable int cartId){
 	System.out.println("happy days");

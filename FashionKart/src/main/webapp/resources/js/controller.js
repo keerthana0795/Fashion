@@ -1,5 +1,5 @@
-var app=angular.module("app",[])
-app.controller("ProductController",function($scope,$http){
+var app=angular.module('app',[])
+app.controller('ProductController',function($scope,$http){
 $scope.addToCart=function(productId){
 	alert('Product successfully added to the cart');
 $http.put('http://localhost:8080/FashionKart/cart/addCartItem/'+productId).success(function(){

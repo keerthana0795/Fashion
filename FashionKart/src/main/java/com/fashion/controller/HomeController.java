@@ -23,6 +23,7 @@ public class HomeController {
 		// TODO Auto-generated constructor stub
 		System.out.println("inside controller");
 	}
+	
 @RequestMapping("/")
 	public String gotoHome()
 	{
@@ -45,34 +46,14 @@ public String signin(@RequestParam(value="error",required=false) String error,
 		model.addAttribute("logout","Loggedout successfully..");
 	return "Signin";
 }
-/*@RequestMapping("/Signup")
-public String gotoHome4()
-{
-	return "Signup";
-}*/
+
 @RequestMapping("/index")
 public String gotoHome5()
 {
 	return "index";
 }
-@RequestMapping("/Header")
-public String gotoHome6()
-{
-	return "Header";
-}
-@RequestMapping("/Logout")
-public String gotoHome7()
-{
-	return "Logout";
-}
-@RequestMapping("/Sig2")
-public String gotoHome8()
-{
-	return "Sig2";
-}
 
 @RequestMapping(value="LogCheck",method=RequestMethod.POST)
-
 
 public void validateLogin(HttpServletRequest request,HttpServletRequest response,ServletRequest req,ServletResponse res)throws ServletException,IOException
 {

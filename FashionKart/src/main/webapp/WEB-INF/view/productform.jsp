@@ -50,7 +50,7 @@
 </div>  --%>
 
 <div class="form-group">
-<label for="category" style="color:Blue;font-size:15px;font-family:Lucida Sans Unicode">Category</label>
+<label for="category" style="color:Blue;font-size:15px;font-family:AR BLANCA">Category</label>
 <c:forEach var="c" items="${categories }">
 <form:radiobutton path="category.id" value="${c.id }"/>
 ${c.categoryDetails }

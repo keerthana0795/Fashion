@@ -1,3 +1,4 @@
+
 package com.fashion.model;
 
 import java.io.Serializable;
@@ -24,7 +25,7 @@ private double totalPrice;
 private Product product;
 
 @ManyToOne
-//@JsonIgnore
+@JsonIgnore
 @JoinColumn(name="cart_id")
 private Cart cart;
 
@@ -67,8 +68,5 @@ public Cart getCart() {
 public void setCart(Cart cart) {
 	this.cart = cart;
 }
-
-
-
 
 }

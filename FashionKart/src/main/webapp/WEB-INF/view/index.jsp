@@ -1,27 +1,11 @@
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
+<%@ include file="Header1.jsp" %>
 <html>
-<link rel="stylesheet" href="resources/css/default.css" type="text/css"> 
 <head>
 <title>TRENDY.COM</title>
-
-										<!-- Bootstrap Command -->										
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="<c:url value='/resources/css/bootstrap.min.css'/>" />
-  <link rel="stylesheet" href="resources/css/default.css" type="text/css">
-  
-<!--  <style>
- body {
-    background-image: url("resources/images/img6.jpg");
-} 
-</style>-->
-
 </head>
 <body>
 											<!-- Header tab Command -->
 							
-<%@ include file="Header1.jsp" %>
 <%@ include file="Carosual.jsp" %>
 
                                                  <!-- Footer tab Command -->

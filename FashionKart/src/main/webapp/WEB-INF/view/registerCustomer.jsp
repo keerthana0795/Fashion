@@ -1,29 +1,20 @@
-<%-- <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%> --%>
-<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@page isELIgnored="false" %>
 
 <%@ include file="Header1.jsp" %>
 <html>
 <head>
-<!-- Bootstrap Command -->
+										<!-- Bootstrap Command -->
 										
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		    <link rel="stylesheet" href="<c:url value='/resource/css/bootstrap.min.css'/>" />
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 
-
-<title>Insert title here</title>
-
-
+<title>Join us</title>
 </head>
-
 
 <body>
 <div class="container-wrapper">
 <div class="container">
 
-<c:url var="url" value="/all/registerCustomer"></c:url>
+<c:url var="url" value="/ev/registerCustomer"></c:url>
 
 <form:form action="${url }" commandName="customer">
 

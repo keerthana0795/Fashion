@@ -17,12 +17,12 @@ public class CustomerController {
 	@Autowired
 private CustomerService customerService;	
 	
-@RequestMapping("/all/registrationForm")
+@RequestMapping("/ev/registrationForm")
 public String getRegistrationForm(Model model){
 	model.addAttribute("customer",new Customer());
 	return "registerCustomer";
 }
-@RequestMapping("/all/registerCustomer")
+@RequestMapping("/ev/registerCustomer")
 public String registerCustomer(@Valid @ModelAttribute(value="customer") Customer customer
 		,BindingResult result,Model model){
 	if(result.hasErrors())

@@ -53,7 +53,7 @@ public String saveProduct(
 	
 	MultipartFile prodImage=product.getImage();
 	if(!prodImage.isEmpty()){
-		Path paths=Paths.get("F:/Cloud/FashionKart/src/main/webapp/resources/images"+product.getId()+".jpg");
+		Path paths=Paths.get("F:/Cloud/FashionKart/src/main/webapp/resources/images/"+product.getId()+".jpg");
 		
 		try{
 			prodImage.transferTo(new File(paths.toString()));
