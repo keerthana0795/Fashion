@@ -22,7 +22,8 @@
 
 <a href="" class="btn btn-success pull-left" ng-click="clearCart()"><span class="glyphicon glyphicon-shopping-cart"></span>ClearCart</a>
 
-<a href="" class="btn btn-success pull-right"><span class="glyphicon glyphicon-shopping-cart"></span>Checkout</a>
+<a href="<c:url value="/order/${cartId}"></c:url>" class="btn btn-success pull-right">
+<span class="glyphicon glyphicon-shopping-cart"></span>Checkout</a>
 <table class="table table-striped">
 <thead>
 <tr><th>NAME</th><th>QUANTITY</th><th>TOTAL PRICE</th><th>REMOVE</th>

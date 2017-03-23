@@ -17,10 +17,7 @@
     <!-- <security:intercept-url pattern="/all/**" access="hasAnyRole('ROLE_ADMIN','ROLE_USER')"/> --> 
     <security:intercept-url pattern="/ev/**" access="permitAll"/>
     
-    <!-- <security:intercept-url pattern="/productform" access="hasRole('ROLE_ADMIN')"/>
-    <security:intercept-url pattern="/productlist" access="hasRole('ROLE_USER')"/> -->
-    
-    
+        
     <security:form-login login-page="/Signin" 
      authentication-failure-url="/Signin?error" 
      login-processing-url="/j_spring_security_check" 

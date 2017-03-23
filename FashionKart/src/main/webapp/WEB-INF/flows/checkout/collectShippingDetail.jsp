@@ -1,6 +1,13 @@
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-<%@ page isELIgnored="false" %>
-<%@ include file="/WEB-INF/view/Header1.jsp" %>
+<%@taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@include file="/WEB-INF/view/Header1.jsp" %>
+<%@page isELIgnored="false" %>
+
+<html>
+<head>
+<title>Collect Shipping Detail</title>
+</head>
+<body>
+
 <div class="container-wrapper">
     <div class="container">
         <div class="page-header">
@@ -31,7 +38,7 @@
 
         <div class="form-group">
             <label for="shippingState">State</label>
-            <form:input path="cart.customer.shippingAddress.state" id="shippingState" class="form-Control" />
+            <form:input path="cart.customer.shippingAddress.State" id="shippingState" class="form-Control" />
         </div>
 
         <div class="form-group">
@@ -48,10 +55,16 @@
 
         <br/><br/>
 
-        <button class="btn btn-default" name="_eventId_backToCollectCustomerInfo">Back</button>
+        <button class="btn btn-warning" name="_eventId_backToCollectCustomerInfo">Back</button>
 
-        <input type="submit" value="Next" class="btn btn-default" name="_eventId_shippingDetailCollected" />
+        <input type="submit" value="Next" class="btn btn-primary" name="_eventId_shippingDetailCollected" />
 
-        <button class="btn btn-default" name="_eventId_cancel">Cancel</button>
+        <button class="btn btn-danger" name="_eventId_cancel">Cancel</button>
 
         </form:form>
+	</div>
+</div>
+<%-- <%@ include file="/WEB-INF/view/Footer.jsp" %> --%>
+
+</body>
+</html>

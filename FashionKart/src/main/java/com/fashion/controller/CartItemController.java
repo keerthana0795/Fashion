@@ -101,7 +101,7 @@ CartItem cartItem=cartItemService.getCartItem(cartItemId);
 cartItemService.removeCartItem(cartItem);
 }
 
-@RequestMapping("/cart/removeAllCartItem/{cartId}")
+@RequestMapping("/cart/removeAllCartItems/{cartId}")
 @ResponseStatus(value=HttpStatus.NO_CONTENT)
 public void removeAllCartItems(@PathVariable int cartId){
 	System.out.println("happy days");

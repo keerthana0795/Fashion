@@ -27,6 +27,7 @@
 					<th style="color:white;">DESCRPTION</th>
 					<th style="color:white;">CATEGORY</th>
 					<th style="color:white;">VIEW</th>
+					
 					<security:authorize access="hasRole('ROLE_ADMIN')">
 					<th style="color:white;">DELETE</th>
 					<th style="color:white;">EDIT</th>
